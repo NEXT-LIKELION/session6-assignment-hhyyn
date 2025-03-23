@@ -1,0 +1,15 @@
+const user = {
+    id: 101,
+    name: "Eve",
+    email: "eve@example.com",
+    role: "admin"
+};
+
+function getUserData(obj, key) {
+    return obj.hasOwnProperty(key) ? obj[key] : "키 없음";
+}
+
+// 예제 실행
+console.log(getUserData(user, "name"));
+console.log(getUserData(user, "email"));
+console.log(getUserData(user, "age"));
